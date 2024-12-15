@@ -1,17 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+/* Import dine styles direkte her - undlad at importere App.css i CSS-filen igen */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Sikkerhed for fuld højde */
+}
+
 .App {
+    padding: 0;
+    margin: 0;
 }
 
-.section1 {
-    height: 100vh;
-    width: 100%;
-}
-
-.section2 {
-    height: 100vh;
-    width: 100%;
-}
-
+.section1,
+.section2,
 .section3 {
     height: 100vh;
     width: 100%;
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+}
+
+.section1 {
+    display: flex; /* Brug Flexbox */
+    justify-content: center; /* Centrer vandret */
+    align-items: center; /* Centrer lodret */
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+    background-color: #2e2e2e;
+}
+
+/* Headings */
+.head {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900; /* Gør teksten ekstra fed */
+    color: white;
+    font-size: 5rem; /* Tilpas størrelsen efter behov */
+    text-align: center; /* Sørg for, at teksten er centreret */
+}
+
+.menu {
+    display: flex;
+    flex-direction: row; /* Items in a row */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Add spacing between menu items */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
+}
+
+.menu li {
+    list-style: none; /* Ensure no bullets for individual items */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Make text white */
+    font-family: "Montserrat", sans-serif; /* Use Montserrat font */
+    font-weight: 900; /* Make it bold */
+    font-size: 1.5rem; /* Adjust size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu a:hover {
+    color: #f39c12; /* Change text color on hover (customize this color) */
+}
+
+/* Section 2 */
+.section2 {
+    background-color: #1a1a2e; /* Dit valgte farve */
+}
+
+/* Section 3 */
+.section3 {
+    background-color: #4b0082; /* Dit valgte farve */
 }
